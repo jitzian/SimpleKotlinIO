@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="test.simple.example.raian.com.org.simplekotlinio.activity.MainActivity">
+    tools:context="test.simple.example.raian.com.org.simplekotlinio.activity.MainActivity"
+    android:id="@+id/mCoordinatorLayout">
 
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
         android:text="Hello World!" app:layout_constraintBottom_toBottomOf="parent"
@@ -45,5 +46,7 @@
         android:layout_marginBottom="104dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/mButton2" />
+
+
 
 </android.support.constraint.ConstraintLayout>

@@ -20,6 +20,9 @@ android {
         }
     }
 }
+ext{
+    supportVersionLib = '25.3.1'
+}
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -27,8 +30,9 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile "com.android.support:appcompat-v7:${supportVersionLib}"
     testCompile 'junit:junit:4.12'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.android.support:support-v4:25.3.1'
+    compile "com.android.support:support-v4:${supportVersionLib}"
+    compile "com.android.support:design:${supportVersionLib}"
 }
